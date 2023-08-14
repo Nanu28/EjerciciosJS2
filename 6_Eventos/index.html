@@ -11,18 +11,44 @@
 <body>
 
     <h1>Ejercicios JS - Eventos</h1>
+    
+    <h2>Ejercicio 1</h2>
+    <div id="square"></div>
+    <button id="changeButton">Cambiar</button>
+    <script src="script.js"></script>  
 
-    <div div class="contenedor" id="caja">
-        <div class="cuadrado">
-            <h3 class="colorTexto" id="colorText">rojo</h3>
-        </div>
-        <button id="boton">cambiar</button>
-    </div>
-
-    <h2>Ejercicio 3</h2>
-
+    <h2>Ejercicio 2</h2>
     <div id="cuadradoEjercicio3">Cuadrado</div>
     <input type="text" id="textInput" placeholder="Escribe aquí...">
+
+    <h2>Ejercicio 3 - Calculadora IMC</h2>
+    <label for="weight">Peso (kg):</label>
+    <input type="number" id="weight" step="0.01">
+    <br>
+    <label for="height">Altura (m):</label>
+    <input type="number" id="height" step="0.01">
+    <br>
+    <button id="calculateButton">Calcular</button>
+    <br>
+    <label for="result">Tu IMC es:</label>
+    <input type="text" id="result" disabled>
+
+    <h2>Ejercicio 4</h2>
+    <div class="converter">
+        <h2>Dólares a Pesos</h2>
+        <label for="dollars">Dólares:</label>
+        <input type="number" id="dollars" step="0.01">
+        <p>=</p>
+        <input type="text" id="pesos" disabled>
+    </div>
+
+    <div class="converter">
+        <h2>Pesos a Dólares</h2>
+        <label for="pesosToDollars">Pesos:</label>
+        <input type="number" id="pesosToDollars" step="0.01">
+        <p>=</p>
+        <input type="text" id="dollarsToPesos" disabled>
+    </div>
 
     <script src="./script.js"></script>
 </body>

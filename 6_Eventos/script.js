@@ -7,19 +7,22 @@
 // dentro del cuadrado.
 
 
-// const cambiarColor = document.getElementById ( "boton" );
-// const cuadrado = document.getElementById("cuadrado");
+// const square = document.getElementById("square");
+// const changeButton = document.getElementById("changeButton");
 
-// cambiarColor.addEventListener ( 'click', cambiarColorBtn );
+// let isGray = true;
 
-// function cambiarColorBtn ( cuadrado ) {
-//     if (cuadrado.target.classList.contains( "grey" )) {
-//         cuadrado.target.classList.toggle( "lightblue" );
+// changeButton.addEventListener("click", () => {
+//     if (isGray) {
+//         square.style.backgroundColor = "lightblue";
+//         square.textContent = "Celeste";
+//         isGray = false;
 //     } else {
-//         cuadrado.target.classList.contains( "lightblue" );
-//         cuadrado.target.classList.toggle( "grey" );
+//         square.style.backgroundColor = "red";
+//         square.textContent = "Rojo";
+//         isGray = true;
 //     }
-// }
+// });
 
 
 // 2° - Crear una aplicación que muestre un cuadrado de color gris. Debajo deberá
@@ -40,10 +43,47 @@
 
 // 3° - Crear una aplicación que calcule el índice de masa corporal, al presionar el
 // botón “calcular” deberá mostrar el resultado en el input correspondiente.
+// const weightInput = document.getElementById("weight");
+// const heightInput = document.getElementById("height");
+// const calculateButton = document.getElementById("calculateButton");
+// // const resultInput = document.getElementById("result");
 
+//  calculateButton.addEventListener("click", () => {
+//      const weight = parseFloat(weightInput.value);
+//      const height = parseFloat(heightInput.value);
+    
+//      if (!isNaN(weight) && !isNaN(height) && height > 0) {
+//          const bmi = calculateBMI(weight, height);
+//          resultInput.value = bmi.toFixed(2);
+//      } else {
+//          resultInput.value = "";
+//      }
+//  });
+
+//  function calculateBMI(weight, height) {
+//      return weight / (height * height);
+//  }
 
 
 // 4° - Crear una aplicación de conversión de divisa. Deberá tener los valores por
 // defecto, por ejemplo 1 dólar = 500 pesos ( valor de ejemplo ), y al hacer algún cambio
 // en alguno de los inputs se deberá ver reflejado su correspondiente valor en la
 // moneda a convertir.
+// const dollarsInput = document.getElementById("dollars");
+// const pesosInput = document.getElementById("pesos");
+// const pesosToDollarsInput = document.getElementById("pesosToDollars");
+// const dollarsToPesosInput = document.getElementById("dollarsToPesos");
+
+// const exchangeRate = 500; // Valor de ejemplo: 1 dólar = 500 pesos
+
+// dollarsInput.addEventListener("input", () => {
+//     const dollars = parseFloat(dollarsInput.value);
+//     const convertedPesos = dollars * exchangeRate;
+//     pesosInput.value = convertedPesos.toFixed(2);
+// });
+
+// pesosToDollarsInput.addEventListener("input", () => {
+//     const pesosToDollars = parseFloat(pesosToDollarsInput.value);
+//     const convertedDollars = pesosToDollars / exchangeRate;
+//     dollarsToPesosInput.value = convertedDollars.toFixed(2);
+// });
